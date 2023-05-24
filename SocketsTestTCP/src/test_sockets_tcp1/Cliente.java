@@ -10,7 +10,7 @@ public class Cliente {
 	
 	//TODO: Here comes the IP port
 	public static void main(String[] args) {
-		final String HOST = "Here comes the IP port";
+		final String HOST = "Here comes the IPv4 port";
 		final int PORT = 5050;
 		Socket sc = null;
 		DataInputStream in;
@@ -22,7 +22,7 @@ public class Cliente {
 			in = new DataInputStream(sc.getInputStream());
 			out = new DataOutputStream(sc.getOutputStream());
 			
-			out.writeUTF("Client message");
+			out.writeUTF("Este mensaje lo envia el cliente");
 			String message = in.readUTF();
 			
 			System.out.println(message);

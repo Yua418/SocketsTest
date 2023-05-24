@@ -30,7 +30,7 @@ public class Servidor {
 				String text = in.readUTF();
 				System.out.println(text);
 				
-				out.writeUTF("Hola SC");
+				out.writeUTF("Este mensaje lo envia el servidor");
 				
 				sc.close();
 				System.out.println("Cliente Desconectado");
